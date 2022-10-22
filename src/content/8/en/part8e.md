@@ -413,7 +413,6 @@ The file <i>index.js</i> is changed to
 
 ```js
 // highlight-start
-const { execute, subscribe } = require('graphql')
 const { WebSocketServer } = require('ws')
 const { useServer } = require('graphql-ws/lib/use/ws')
 // highlight-end
