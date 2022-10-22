@@ -648,10 +648,7 @@ npm install @apollo/client graphql-ws
 The new configuration is due to the fact that the application must have an HTTP connection as well as a WebSocket connection to the GraphQL server.
 
 ```js
-const wsLink = new WebSocketLink({
-  uri: `ws://localhost:4000/graphql`,
-  options: { reconnect: true }
-})
+const httpLink = new HttpLink({ uri: 'http://localhost:4000' })
 
 const wsLink = new GraphQLWsLink(
   createClient({
